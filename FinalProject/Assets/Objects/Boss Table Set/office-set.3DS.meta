@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 254250b424ce5be4e81b74ec97d9e243
+timeCreated: 1446414559
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box02
+    100002: Box14
+    100004: Box15
+    100006: Journal_01
+    100008: Journal_02
+    100010: Journal_03
+    100012: kreslo_me0
+    100014: kreslo_me1
+    100016: kreslo_me2
+    100018: kreslo_me3
+    100020: kreslo_me4
+    100022: kreslo_me5
+    100024: kreslo_me6
+    100026: kreslo_met
+    100028: lampa nast
+    100030: notebook02
+    100032: //RootNode
+    100034: Omni03
+    100036: podstavka_
+    400000: Box02
+    400002: Box14
+    400004: Box15
+    400006: Journal_01
+    400008: Journal_02
+    400010: Journal_03
+    400012: kreslo_me0
+    400014: kreslo_me1
+    400016: kreslo_me2
+    400018: kreslo_me3
+    400020: kreslo_me4
+    400022: kreslo_me5
+    400024: kreslo_me6
+    400026: kreslo_met
+    400028: lampa nast
+    400030: notebook02
+    400032: //RootNode
+    400034: Omni03
+    400036: podstavka_
+    2300000: Box02
+    2300002: Box14
+    2300004: Box15
+    2300006: Journal_01
+    2300008: Journal_02
+    2300010: Journal_03
+    2300012: kreslo_me0
+    2300014: kreslo_me1
+    2300016: kreslo_me2
+    2300018: kreslo_me3
+    2300020: kreslo_me4
+    2300022: kreslo_me5
+    2300024: kreslo_me6
+    2300026: lampa nast
+    2300028: notebook02
+    3300000: Box02
+    3300002: Box14
+    3300004: Box15
+    3300006: Journal_01
+    3300008: Journal_02
+    3300010: Journal_03
+    3300012: kreslo_me0
+    3300014: kreslo_me1
+    3300016: kreslo_me2
+    3300018: kreslo_me3
+    3300020: kreslo_me4
+    3300022: kreslo_me5
+    3300024: kreslo_me6
+    3300026: lampa nast
+    3300028: notebook02
+    4300000: Box02
+    4300002: notebook02
+    4300004: Box15
+    4300006: lampa nast
+    4300008: Journal_02
+    4300010: Journal_03
+    4300012: Box14
+    4300014: Journal_01
+    4300016: kreslo_me0
+    4300018: kreslo_me1
+    4300020: kreslo_me2
+    4300022: kreslo_me3
+    4300024: kreslo_me4
+    4300026: kreslo_me5
+    4300028: kreslo_me6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

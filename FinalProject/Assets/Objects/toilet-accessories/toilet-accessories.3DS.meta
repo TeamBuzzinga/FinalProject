@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: f9e440fa281630d4c876ef75404a5825
+timeCreated: 1446852459
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Circle06
+    100002: Circle07
+    100004: Circle08
+    100006: Circle09
+    100008: Circle10
+    100010: Circle11
+    100012: Group01
+    100014: Group02
+    100016: LAYER1
+    100018: LAYER10
+    100020: LF_BEFESTI
+    100022: LF_KERAMIK
+    100024: Loft01
+    100026: Loft02
+    100028: Loft03
+    100030: Loft04
+    100032: //RootNode
+    100034: zjx01
+    100036: zjx04
+    100038: zjx05
+    400000: Circle06
+    400002: Circle07
+    400004: Circle08
+    400006: Circle09
+    400008: Circle10
+    400010: Circle11
+    400012: Group01
+    400014: Group02
+    400016: LAYER1
+    400018: LAYER10
+    400020: LF_BEFESTI
+    400022: LF_KERAMIK
+    400024: Loft01
+    400026: Loft02
+    400028: Loft03
+    400030: Loft04
+    400032: //RootNode
+    400034: zjx01
+    400036: zjx04
+    400038: zjx05
+    2300000: Circle06
+    2300002: Circle07
+    2300004: Circle08
+    2300006: Circle09
+    2300008: Circle10
+    2300010: Circle11
+    2300012: LAYER1
+    2300014: LAYER10
+    2300016: LF_BEFESTI
+    2300018: LF_KERAMIK
+    2300020: Loft01
+    2300022: Loft02
+    2300024: Loft03
+    2300026: Loft04
+    2300028: zjx01
+    2300030: zjx04
+    2300032: zjx05
+    3300000: Circle06
+    3300002: Circle07
+    3300004: Circle08
+    3300006: Circle09
+    3300008: Circle10
+    3300010: Circle11
+    3300012: LAYER1
+    3300014: LAYER10
+    3300016: LF_BEFESTI
+    3300018: LF_KERAMIK
+    3300020: Loft01
+    3300022: Loft02
+    3300024: Loft03
+    3300026: Loft04
+    3300028: zjx01
+    3300030: zjx04
+    3300032: zjx05
+    4300000: LAYER1
+    4300002: LF_KERAMIK
+    4300004: LF_BEFESTI
+    4300006: LAYER10
+    4300008: zjx04
+    4300010: zjx05
+    4300012: zjx01
+    4300014: Circle06
+    4300016: Loft01
+    4300018: Circle07
+    4300020: Loft02
+    4300022: Circle08
+    4300024: Loft03
+    4300026: Circle09
+    4300028: Loft04
+    4300030: Circle10
+    4300032: Circle11
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

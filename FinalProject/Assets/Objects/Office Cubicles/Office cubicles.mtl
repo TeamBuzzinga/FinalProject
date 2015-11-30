@@ -1,0 +1,52 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 19.08.2014 14:10:19
+
+newmtl wall
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.6863 0.8863 0.8118
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+
+newmtl frame
+	Ns 33.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.8667 0.8667 0.8667
+	Ks 0.2880 0.2880 0.2880
+	Ke 0.0000 0.0000 0.0000
+
+newmtl glass
+	Ns 10.0000
+	Ni 1.5000
+	d 0.6000
+	Tr 0.6000
+	Tf 0.6000 0.6000 0.6000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.8431 0.8431 0.8431
+	Ks 0.4860 0.4860 0.4860
+	Ke 0.0000 0.0000 0.0000
+
+newmtl wood
+	Ns 20.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.6863 0.7412 0.5765
+	Ks 0.4230 0.4230 0.4230
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\hypnagogia\Desktop\Office Cubicles\Texture\Desk_wood.jpg
+	map_Kd C:\Users\hypnagogia\Desktop\Office Cubicles\Texture\Desk_wood.jpg

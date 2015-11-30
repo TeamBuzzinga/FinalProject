@@ -57,12 +57,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -77,11 +71,31 @@
     <Compile Include="Assets\Scripts\AnimationScripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\OptionHandler.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
+    <None Include="Assets\Objects\ArmChair\archibase.net.txt" />
+    <None Include="Assets\Objects\BinUrn\ArchiBase.net.txt" />
+    <None Include="Assets\Objects\Car Key\archibase.net.txt" />
+    <None Include="Assets\Objects\CeilingLamp\archibase.net.txt" />
+    <None Include="Assets\Objects\DustBin\archibase.net.txt" />
+    <None Include="Assets\Objects\Exit Sign\archibase.net.txt" />
+    <None Include="Assets\Objects\Meeting Table\Readme.txt" />
+    <None Include="Assets\Objects\Newspapers\archibase.net.txt" />
+    <None Include="Assets\Objects\Office Cubicles\MY INFO.txt" />
+    <None Include="Assets\Objects\Plant 1\archibase.net.txt" />
+    <None Include="Assets\Objects\Plant 2\archibase.net.txt" />
+    <None Include="Assets\Objects\Sink\archibase.net.txt" />
+    <None Include="Assets\Objects\Suitcase 1\archibase.net.txt" />
+    <None Include="Assets\Objects\Switch\archibase.net.txt" />
+    <None Include="Assets\Objects\Urinal\archibase.net.txt" />
     <None Include="Assets\TaichiCharacterPack\Readme.txt" />
     <None Include="Assets\TaichiCharacterPack\Releasenote.txt" />
     <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
