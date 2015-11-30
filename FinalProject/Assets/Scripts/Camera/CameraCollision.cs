@@ -5,7 +5,9 @@ public class CameraCollision : MonoBehaviour {
     public bool cameraIsColliding;
     public float collisionDistance;
     public Collider playerCollider;
+    public Material[] listOfMaterials;
     CameraMechanics cameraMechanics;
+    int layerMask = 1;
 
     void Start()
     {
@@ -21,15 +23,28 @@ public class CameraCollision : MonoBehaviour {
     {
         Ray checkRay = new Ray(cameraMechanics.getTargetFollow().position, -transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(checkRay, out hit, Mathf.Abs(cameraMechanics.getCurrentMagnitude())))
+        if (Physics.Raycast(checkRay, out hit, Mathf.Abs(cameraMechanics.getCurrentMagnitude()), layerMask))
         {
             cameraIsColliding = true;
             collisionDistance = -hit.distance;
-            if (collisionDistance > -.45f)
+            if (collisionDistance > -.7f)
             {
-                collisionDistance = -.45f;
+                collisionDistance = -.7f;
             }
+            setMaterialtransparency((-collisionDistance - .6f));
         }
-        else cameraIsColliding = false;
+        else
+        {
+            setMaterialtransparency(1);
+            cameraIsColliding = false;
+        }
+    }
+
+    void setMaterialtransparency(float alpha)
+    {
+        foreach (Material mat in listOfMaterials)
+        {
+            mat.color = new Vector4(1, 1, 1, alpha);
+        }
     }
 }
