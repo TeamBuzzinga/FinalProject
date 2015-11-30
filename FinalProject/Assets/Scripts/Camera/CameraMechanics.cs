@@ -24,8 +24,8 @@ public class CameraMechanics : MonoBehaviour {
 
     void Update()
     {
-        lookHorizontal(Input.GetAxisRaw("Mouse X"));
-        lookVertical(Input.GetAxisRaw("Mouse Y"));
+        lookHorizontal(Input.GetAxis("Mouse X"));
+        lookVertical(Input.GetAxis("Mouse Y"));
         updateCameraRotation();
         updateCameraPosition();
 
@@ -66,12 +66,14 @@ public class CameraMechanics : MonoBehaviour {
 
     void lookHorizontal(float horizontalInput)
     {
+        print(horizontalInput);
         oldRotation += Vector3.up * horizontalInput * cameraXSensitivity * Time.deltaTime;
 
     }
 
     void lookVertical(float verticalInput)
     {
+        print(verticalInput);
         oldRotation += Vector3.left * verticalInput * cameraYSensitivuty * Time.deltaTime;
     }
 }
