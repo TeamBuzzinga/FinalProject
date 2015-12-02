@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu\OptionHandler.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />

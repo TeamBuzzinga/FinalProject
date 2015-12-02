@@ -6,6 +6,7 @@ public class CameraMechanics : MonoBehaviour {
     public float cameraYSensitivuty = 25f;
     public float cameraSmoothing = 10f;
     public float cameraMoveSmoothing = 10f;
+    bool updateEnabled = true;
 
 
     CameraCollision collisionCheck;
@@ -24,6 +25,10 @@ public class CameraMechanics : MonoBehaviour {
 
     void Update()
     {
+        if (!updateEnabled)
+        {
+            return;
+        }
         lookHorizontal(Input.GetAxis("Mouse X"));
         lookVertical(Input.GetAxis("Mouse Y"));
         updateCameraRotation();
@@ -46,6 +51,11 @@ public class CameraMechanics : MonoBehaviour {
         return distanceFromTarget;
     }
 
+    public void setUpdateEnabled(bool enable)
+    {
+        updateEnabled = enable;
+    }
+
     void updateCameraRotation()
     {
         Quaternion goalRotation = Quaternion.Euler(oldRotation.x, oldRotation.y, 0);
@@ -66,14 +76,14 @@ public class CameraMechanics : MonoBehaviour {
 
     void lookHorizontal(float horizontalInput)
     {
-        print(horizontalInput);
+
         oldRotation += Vector3.up * horizontalInput * cameraXSensitivity * Time.deltaTime;
 
     }
 
     void lookVertical(float verticalInput)
     {
-        print(verticalInput);
+
         oldRotation += Vector3.left * verticalInput * cameraYSensitivuty * Time.deltaTime;
     }
 }

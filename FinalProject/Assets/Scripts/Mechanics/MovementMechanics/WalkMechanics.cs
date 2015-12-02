@@ -14,6 +14,8 @@ public class WalkMechanics : MonoBehaviour {
     
     private float lastHInput;
     private float lastVInput;
+
+    bool updateEnabled = true;
 	// Use this for initialization
 	protected virtual void Start () {
         rigid = GetComponent<Rigidbody>();
@@ -27,6 +29,10 @@ public class WalkMechanics : MonoBehaviour {
 
     void FixedUpdate()
     {
+        if (!updateEnabled)
+        {
+            return;
+        }
         updateMovementSpeed();
         updateRotation();
     }
@@ -65,5 +71,11 @@ public class WalkMechanics : MonoBehaviour {
     public bool getIsWalking()
     {
         return Mathf.Abs(lastHInput) > .001f || Mathf.Abs(lastVInput) > .001f;
+    }
+
+    public void setUpdateEnabled(bool updateEnabled)
+    {
+        movementOn = updateEnabled;
+        rotateOn = updateEnabled;
     }
 }

@@ -22,6 +22,10 @@ public class PlayerWalkMechanics : WalkMechanics {
     protected override void updateRotation()
     {
         base.updateRotation();
+        if(!rotateOn)
+        {
+            return;
+        }
         if (Mathf.Abs(getVInput()) > .001f || Mathf.Abs(getHInput()) > .001f)
         {
             Vector3 directionInput = (cameraFollow.forward * getVInput() + cameraFollow.right * getHInput());
@@ -29,8 +33,5 @@ public class PlayerWalkMechanics : WalkMechanics {
             float goalRotation = Mathf.Atan2(directionInput.x, directionInput.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(new Vector3(0, goalRotation, 0)), Time.fixedDeltaTime * rotationAcceleration);
         }
-
-
-
     }
 }
