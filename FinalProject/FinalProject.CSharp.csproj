@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AnimationScripts\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />
     <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />

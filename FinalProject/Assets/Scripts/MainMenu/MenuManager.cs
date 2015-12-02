@@ -6,6 +6,8 @@ public class MenuManager : MonoBehaviour {
     public Animator cameraAnimator;
     public Animator creditsAnimator;
 
+    public SoundManager transitionAudio;
+
     public float timeDelay = .75f;//The amount of time before switching to another option
 
     public Button[] introButtons = new Button[4];
@@ -163,6 +165,8 @@ public class MenuManager : MonoBehaviour {
         cameraAnimator.SetTrigger("Options");
         menuAnim.SetTrigger("Options");
         currentState = State.Options;
+        transitionAudio.setCurrentTrack(0);
+        transitionAudio.playSound();
     }
 
     public void playButtonPressed()
@@ -176,6 +180,8 @@ public class MenuManager : MonoBehaviour {
         menuAnim.SetTrigger("Credits");
         creditsAnimator.SetTrigger("Credits");
         currentState = State.Credits;
+        transitionAudio.setCurrentTrack(0);
+        transitionAudio.playSound();
     }
 
     public void quitButtonPressed()
@@ -191,6 +197,8 @@ public class MenuManager : MonoBehaviour {
         {
             creditsAnimator.SetTrigger("Intro");
         }
+        transitionAudio.setCurrentTrack(1);
+        transitionAudio.playSound();
         
         currentState = State.Intro;
     }
