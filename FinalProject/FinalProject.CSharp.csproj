@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\ThrowMechanics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />
