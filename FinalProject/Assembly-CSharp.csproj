@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />
+     <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
      <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
      <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />
@@ -64,7 +65,11 @@
      <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
      <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
      <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />
+     <Compile Include="Assets\Scripts\Mechanics\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Mechanics\ThrowMechanics.cs" />
      <Compile Include="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs" />
+     <Compile Include="Assets\Scripts\Npc_script\NPCAttack.cs" />
+     <Compile Include="Assets\Scripts\Npc_script\NpcTakeDamage.cs" />
      <Compile Include="Assets\Scripts\Npc_script\rotate.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\Objects\CeilingLamp\archibase.net.txt" />
