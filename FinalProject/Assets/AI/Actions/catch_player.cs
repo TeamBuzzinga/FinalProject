@@ -20,9 +20,9 @@ public class catch_player : RAINAction
 
 			int caught_time=ai.WorkingMemory.GetItem<int>("catch_time");
 			bool leave=ai.WorkingMemory.GetItem<bool>("leave");
+            bool stun = ai.WorkingMemory.GetItem<bool>("stun");
 
-
-			if (caught_time <= 3&&leave)
+			if (caught_time <= 3 && leave && !stun)
 			{
 				caught_time++;
 				ai.WorkingMemory.SetItem<int>("catch_time",caught_time);
