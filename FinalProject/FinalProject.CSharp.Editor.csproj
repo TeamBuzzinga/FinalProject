@@ -54,6 +54,9 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -68,6 +71,9 @@
     </Reference>
     <Reference Include="UnityEditor.Networking">
       <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
       <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
@@ -111,11 +117,8 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="RAINUpdater">
-      <HintPath>Assets\RAIN\Editor\RAINUpdater.dll</HintPath>
-    </Reference>
-    <Reference Include="RAINMetaformEditor">
-      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
+    <Reference Include="RAIN">
+      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
     </Reference>
     <Reference Include="RAINMetaform">
       <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
@@ -123,14 +126,17 @@
     <Reference Include="AetherUnity">
       <HintPath>Assets\RAIN\Editor\AetherUnity.dll</HintPath>
     </Reference>
-    <Reference Include="RAIN">
-      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
-    </Reference>
     <Reference Include="LegionRestModel">
       <HintPath>Assets\RAIN\Editor\LegionRestModel.dll</HintPath>
     </Reference>
     <Reference Include="RAINEditor">
       <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaformEditor">
+      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINUpdater">
+      <HintPath>Assets\RAIN\Editor\RAINUpdater.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
