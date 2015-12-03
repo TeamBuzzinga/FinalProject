@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />
+    <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
     <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
     <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />

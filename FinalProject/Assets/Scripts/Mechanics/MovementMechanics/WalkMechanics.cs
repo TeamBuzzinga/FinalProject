@@ -25,6 +25,12 @@ public class WalkMechanics : MonoBehaviour {
 	protected virtual void Update () {
         lastHInput = Input.GetAxisRaw("Horizontal");
         lastVInput = Input.GetAxisRaw("Vertical");
+        if (!movementOn)
+        {
+            lastHInput = 0;
+            lastVInput = 0;
+        }
+        
 	}
 
     void FixedUpdate()
