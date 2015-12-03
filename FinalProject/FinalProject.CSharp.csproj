@@ -66,11 +66,11 @@
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaform">
-      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
-    </Reference>
     <Reference Include="RAIN">
       <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaform">
+      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -86,6 +86,8 @@
     <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\ThrowMechanics.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />

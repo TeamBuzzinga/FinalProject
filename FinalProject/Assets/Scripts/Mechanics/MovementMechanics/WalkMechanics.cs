@@ -39,7 +39,7 @@ public class WalkMechanics : MonoBehaviour {
 
     protected virtual void updateMovementSpeed()
     {
-        if (!movementOn)
+        if (true)
         {
             return;
         }
