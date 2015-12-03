@@ -10,11 +10,13 @@ public class AudioNpcTakeDamage : MonoBehaviour {
     private ParticleSystem[] p_systems;
     private Animator player_animator;
     private bool hit=false;
+    private AudioSource dizzy;
 	// Use this for initialization
 	void Start () {
 		npc = GetComponentInChildren<AIRig>();
         p_systems = GetComponentsInChildren<ParticleSystem>();
         player_animator = GetComponent<Animator>();
+        dizzy = GetComponent<AudioSource>();
 	}
 
 	public void takeDamage() {
@@ -38,7 +40,9 @@ public class AudioNpcTakeDamage : MonoBehaviour {
 
         if (npc.AI.Mind.AI.WorkingMemory.GetItem<bool>("stun"))
         {
-            for (int i = 0; i < p_systems.Length; i++)
+            if (!dizzy.isPlaying)
+                dizzy.Play();
+            for (int i = 0; i < p_systems.Length; i++)//start dizzy particle effect
             {
                 if (p_systems[i].name != "dust")
                 {
@@ -49,9 +53,10 @@ public class AudioNpcTakeDamage : MonoBehaviour {
         }
         else
         {
+            dizzy.Stop();
             for (int i = 0; i < p_systems.Length; i++)
             {
-                if (p_systems[i].name != "dust")
+                if (p_systems[i].name != "dust")//stop dizzy
                 {
                     p_systems[i].Stop();
                 }
@@ -63,7 +68,7 @@ public class AudioNpcTakeDamage : MonoBehaviour {
             
             for (int i = 0; i < p_systems.Length; i++)
             {
-                if (p_systems[i].name == "dust")
+                if (p_systems[i].name == "dust")//start dust
                     p_systems[i].Play();
             }
         }
@@ -72,7 +77,7 @@ public class AudioNpcTakeDamage : MonoBehaviour {
             
             for (int i = 0; i < p_systems.Length; i++)
             {
-                if (p_systems[i].name == "dust")
+                if (p_systems[i].name == "dust")//start dust
                     p_systems[i].Stop();
             }
         }

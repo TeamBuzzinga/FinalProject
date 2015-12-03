@@ -51,17 +51,11 @@
     <Reference Include="UnityEngine">
       <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Analytics">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
@@ -98,11 +92,14 @@
     <Compile Include="Assets\Scripts\MainMenu\OptionHandler.cs" />
     <Compile Include="Assets\Scripts\MainMenu\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
+    <Compile Include="Assets\Scripts\MapPlayerPosition.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\WalkMechanics.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Mechanics\ThrowMechanics.cs" />
     <Compile Include="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs" />
+    <Compile Include="Assets\Scripts\Npc_script\NPCAttack.cs" />
+    <Compile Include="Assets\Scripts\Npc_script\NpcTakeDamage.cs" />
     <Compile Include="Assets\Scripts\Npc_script\rotate.cs" />
   </ItemGroup>
   <ItemGroup>
