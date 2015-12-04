@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Mechanics\ThrowMechanics.cs">
     <Files>
-      <File FileName="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs" Line="95" Column="10" />
-      <File FileName="Assets\Scripts\Mechanics\ThrowMechanics.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Mechanics\ThrowMechanics.cs" Line="77" Column="1" />
+      <File FileName="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\AudioScripts\Audio_PlayerMove.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" Line="1" Column="1" />
     </Files>

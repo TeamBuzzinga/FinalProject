@@ -62,13 +62,13 @@ public class ThrowMechanics : MonoBehaviour {
         Vector3 throwDirection = (direction.x * transform.forward + direction.y * transform.up + direction.z * transform.right).normalized;
         obj.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce);
         obj.GetComponent<DestroyOnTrigger>().ignoreTrigger(GetComponent<Collider>());
-<<<<<<< HEAD
+
 
 		audioSource.clip = Throw;
 		audioSource.Play ();
-=======
+
         playerStats.papaerBalls--;
->>>>>>> origin/master
+
     }
 
     
