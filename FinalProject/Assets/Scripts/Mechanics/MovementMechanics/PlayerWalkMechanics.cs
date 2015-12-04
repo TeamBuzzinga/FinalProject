@@ -4,9 +4,14 @@ using System.Collections;
 public class PlayerWalkMechanics : WalkMechanics {
     public Transform cameraFollow;
 
+	//public AudioClip walk;
+	//private AudioSource audioSource;
+
+
     protected override void Start()
     {
         base.Start();
+		//audioSource = GetComponent<AudioSource> ();
     }
 
     protected override void updateMovementSpeed()
@@ -17,6 +22,10 @@ public class PlayerWalkMechanics : WalkMechanics {
         Vector3 goalVector = cameraFwd * getVInput() + cameraRight * getHInput();
         goalVector = goalVector.normalized * scaling * speed;
         rigid.velocity = Vector3.MoveTowards(rigid.velocity, goalVector, Time.fixedDeltaTime * acceleration);
+		//if(!audioSource.isPlaying){
+			//audioSource.clip = walk;
+			//audioSource.Play();
+		//}
     }
 
     protected override void updateRotation()

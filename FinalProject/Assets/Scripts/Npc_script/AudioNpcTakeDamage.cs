@@ -36,6 +36,7 @@ public class AudioNpcTakeDamage : MonoBehaviour {
         if (other.gameObject.CompareTag("Ball"))
         {
             npc.AI.Mind.AI.WorkingMemory.SetItem<bool>("stun", true);
+			dizzy.Play();
         }
     }
 
@@ -43,8 +44,8 @@ public class AudioNpcTakeDamage : MonoBehaviour {
     {
         if (npc.AI.Mind.AI.WorkingMemory.GetItem<bool>("stun"))
         {
-            if (!dizzy.isPlaying)
-                dizzy.Play();
+            /*if (!dizzy.isPlaying)
+                dizzy.Play();*/
             for (int i = 0; i < p_systems.Length; i++)//start dizzy particle effect
             {
                 if (p_systems[i].name != "dust")
