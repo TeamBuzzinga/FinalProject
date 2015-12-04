@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Mechanics\ThrowMechanics.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DoorOpener.js">
     <Files>
-      <File FileName="Assets\Scripts\Mechanics\ThrowMechanics.cs" Line="77" Column="1" />
-      <File FileName="Assets\Scripts\Npc_script\AudioNpcTakeDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AudioScripts\Audio_PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\DoorOpener.js" Line="68" Column="7" />
+      <File FileName="..\..\AlphaDemo\AlphaDemo\Assets\Scripts\CharacterController_New.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
