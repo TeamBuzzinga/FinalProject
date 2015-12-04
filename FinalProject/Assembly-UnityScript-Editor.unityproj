@@ -50,14 +50,18 @@
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\Objects\CeilingLamp\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
+     <None Include="Assets\Objects\Food\Bread\archibase.net.txt" />
      <None Include="Assets\Objects\Plant 1\archibase.net.txt" />
      <None Include="Assets\Objects\Suitcase 1\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\VisualSensorLineShader.shader" />
      <None Include="Assets\Objects\Office Cubicles\MY INFO.txt" />
      <None Include="Assets\Objects\Meeting Table\Readme.txt" />
+     <None Include="Assets\Objects\Food\Basket\archibase.net.txt" />
+     <None Include="Assets\Objects\Food\CokeCan\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshContourShader.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\WaypointShader.shader" />
      <None Include="Assets\TaichiCharacterPack\Readme.txt" />
+     <None Include="Assets\Objects\Food\Apple\archibase.net.txt" />
      <None Include="Assets\Objects\ArmChair\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\TaichiCharacterPack\Releasenote.txt" />
@@ -71,6 +75,7 @@
      <None Include="Assets\RAIN\Editor\Shaders\AspectRingShader.shader" />
      <None Include="Assets\Objects\Car Key\archibase.net.txt" />
      <None Include="Assets\Objects\Urinal\archibase.net.txt" />
+     <None Include="Assets\Objects\Food\Orange\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\NavMeshColliderShader.shader" />
      <None Include="Assets\Objects\BinUrn\ArchiBase.net.txt" />
      <None Include="Assets\Objects\Exit Sign\archibase.net.txt" />
