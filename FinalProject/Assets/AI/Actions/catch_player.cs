@@ -7,9 +7,11 @@ using RAIN.Core;
 [RAINAction]
 public class catch_player : RAINAction
 {
+    GameObject player;
     public override void Start(RAIN.Core.AI ai)
     {
         base.Start(ai);
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public override ActionResult Execute(RAIN.Core.AI ai)
@@ -24,6 +26,11 @@ public class catch_player : RAINAction
 
 			if (caught_time <= 3 && leave && !stun)
 			{
+
+
+                player.GetComponent<PlayerStats>().strikes++;
+
+
 				caught_time++;
 				ai.WorkingMemory.SetItem<int>("catch_time",caught_time);
 				ai.Motor.Speed++;

@@ -25,6 +25,11 @@ public class WalkMechanics : MonoBehaviour {
 	protected virtual void Update () {
         lastHInput = Input.GetAxisRaw("Horizontal");
         lastVInput = Input.GetAxisRaw("Vertical");
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            lastVInput *= .1f;
+            lastHInput *= .1f;
+        }
         if (!movementOn)
         {
             lastHInput = 0;

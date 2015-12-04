@@ -54,6 +54,7 @@
      <Compile Include="Assets\AI\Actions\prediction.cs" />
      <Compile Include="Assets\AI\Actions\take_damage.cs" />
      <Compile Include="Assets\Scripts\AnimationScripts\PlayerAnimation.cs" />
+     <Compile Include="Assets\Scripts\AudioScripts\Audio_PlayerMove.cs" />
      <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />

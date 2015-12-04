@@ -14,6 +14,11 @@ public class ThrowMechanics : MonoBehaviour {
     PlayerStats playerStats;
     PlayerWalkMechanics walkMechanics;
 
+	public AudioClip Throw;
+	private AudioSource audioSource;
+
+
+
     void Update()
     {
         cdTimer = Mathf.MoveTowards(cdTimer, 0, Time.deltaTime);
@@ -45,6 +50,7 @@ public class ThrowMechanics : MonoBehaviour {
         anim = GetComponent<Animator>();
         playerStats = GetComponent<PlayerStats>();
         walkMechanics = GetComponent<PlayerWalkMechanics>();
+		audioSource = GetComponent<AudioSource> ();
     }
 
     void throwBall()
@@ -56,7 +62,13 @@ public class ThrowMechanics : MonoBehaviour {
         Vector3 throwDirection = (direction.x * transform.forward + direction.y * transform.up + direction.z * transform.right).normalized;
         obj.GetComponent<Rigidbody>().AddForce(throwDirection * throwForce);
         obj.GetComponent<DestroyOnTrigger>().ignoreTrigger(GetComponent<Collider>());
+
+
+		audioSource.clip = Throw;
+		audioSource.Play ();
+
         playerStats.papaerBalls--;
+
     }
 
     
