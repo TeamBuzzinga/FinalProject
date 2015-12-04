@@ -11,6 +11,8 @@ public class AudioNpcTakeDamage : MonoBehaviour {
     private Animator player_animator;
     private bool hit=false;
     private AudioSource dizzy;
+    public GameObject exclamation1;
+    public GameObject exclamation2;
 	// Use this for initialization
 	void Start () {
 		npc = GetComponentInChildren<AIRig>();
@@ -37,7 +39,6 @@ public class AudioNpcTakeDamage : MonoBehaviour {
 
     void Update()
     {
-
         if (npc.AI.Mind.AI.WorkingMemory.GetItem<bool>("stun"))
         {
             if (!dizzy.isPlaying)
@@ -81,6 +82,18 @@ public class AudioNpcTakeDamage : MonoBehaviour {
                     p_systems[i].Stop();
             }
         }
+
+        if (npc.AI.Mind.AI.WorkingMemory.GetItem<GameObject>("soundLocation") != null)
+        {
+            exclamation1.GetComponent<MeshRenderer>().enabled = true;
+            exclamation2.GetComponent<MeshRenderer>().enabled = true;
+        }
+        else
+        {
+            exclamation1.GetComponent<MeshRenderer>().enabled = false;
+            exclamation2.GetComponent<MeshRenderer>().enabled = false;
+        }
+
 
 
 

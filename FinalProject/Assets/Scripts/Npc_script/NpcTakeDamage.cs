@@ -9,11 +9,22 @@ public class NpcTakeDamage : MonoBehaviour {
 	private GameObject player;
     private ParticleSystem[] particle;
     private Animator player_animator;
+
+    private AudioSource dizzy;
+    public GameObject exclamation1;
+    public GameObject exclamation2;
+
+
 	// Use this for initialization
 	void Start () {
 		npc = GetComponentInChildren<AIRig>();
         particle = GetComponentsInChildren<ParticleSystem>();
         player_animator = GetComponent<Animator>();
+
+
+
+        dizzy = GetComponent<AudioSource>();
+
 	}
 
 	public void takeDamage() {
@@ -58,6 +69,8 @@ public class NpcTakeDamage : MonoBehaviour {
 
             if (npc.AI.Mind.AI.WorkingMemory.GetItem<bool>("stun"))
             {
+                if (!dizzy.isPlaying)
+                    dizzy.Play();
                 for (int i = 0; i < particle.Length; i++)
                 {
                     if (particle[i].name != "dust")
@@ -69,6 +82,7 @@ public class NpcTakeDamage : MonoBehaviour {
             }
             else
             {
+                dizzy.Stop();
                 for (int i = 0; i < particle.Length; i++)
                 {
                     if (particle[i].name != "dust")
@@ -80,6 +94,16 @@ public class NpcTakeDamage : MonoBehaviour {
 
 
 
+            if (npc.AI.Mind.AI.WorkingMemory.GetItem<GameObject>("varCharNearby") != null)
+            {
+                exclamation1.GetComponent<MeshRenderer>().enabled = true;
+                exclamation2.GetComponent<MeshRenderer>().enabled = true;
+            }
+            else
+            {
+                exclamation1.GetComponent<MeshRenderer>().enabled = false;
+                exclamation2.GetComponent<MeshRenderer>().enabled = false;
+            }
 
 
 
