@@ -29,14 +29,9 @@ public class ObjectivesScript : MonoBehaviour {
         textBox.text = str;
     }
 
-    bool checkObjectiveCompleted(int id, int )
+    bool checkObjectiveCompleted(int id )
     {
-     switch (id)
-        {
-            case 0:
-                if (playerStats.keysCollected == )
-                break;
-        }   
+     
         return false;
     }
 
