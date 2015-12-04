@@ -10,9 +10,11 @@ public class AudioNpcTakeDamage : MonoBehaviour {
     private ParticleSystem[] p_systems;
     private Animator player_animator;
     private bool hit=false;
+
     private AudioSource dizzy;
     public GameObject exclamation1;
     public GameObject exclamation2;
+
 	// Use this for initialization
 	void Start () {
 		npc = GetComponentInChildren<AIRig>();
