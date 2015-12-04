@@ -83,9 +83,6 @@
      <None Include="Assets\Objects\Plant 2\archibase.net.txt" />
      <None Include="Assets\Objects\Switch\archibase.net.txt" />
      <None Include="Assets\Objects\Sink\archibase.net.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -101,29 +98,26 @@
  <Reference Include="UnityEditor.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
- </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="AetherUnity">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/Editor/AetherUnity.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/Editor/AetherUnity.dll</HintPath>
  </Reference>
  <Reference Include="LegionRestModel">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/Editor/LegionRestModel.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/Editor/LegionRestModel.dll</HintPath>
  </Reference>
  <Reference Include="RAINEditor">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaformEditor">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
  </Reference>
  <Reference Include="RAINUpdater">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/Editor/RAINUpdater.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/Editor/RAINUpdater.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
