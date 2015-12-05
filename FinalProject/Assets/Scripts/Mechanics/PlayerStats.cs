@@ -6,6 +6,6 @@ public class PlayerStats : MonoBehaviour {
     public int keysCollected = 0;
     public int strikes = 0;//How often the player has been spotted
     public int papaerBalls;
-
+    public int reachedGoal;
     
 }
