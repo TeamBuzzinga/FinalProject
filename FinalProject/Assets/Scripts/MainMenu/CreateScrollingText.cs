@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CreateScrollingText : MonoBehaviour {
     public Transform creditTextObject;
-    public string scrollText = "Developers:\nRyan Andersen\nSiddharth Shah\nMoon Chang\nWei Yang Quek\nDingfeng Shao\n\nLevel Design\nWei Yang Quek\n\nParticle Effects\nDingfeng Shao\nWei Yang Quek\n\nMenu\nRyan Andersen\n\nPlayer Controller\nWei Yang Quek\nMoon Chang\nSiddharth Shah\n\nCamera Controller\nMoon Chang\n\nNPCs\nSiddharth Shah\nDingfeng Shao\n\nIn game UI\nRyan Andersen\nSiddharth Shah\n\nMusic:\nSad Piano Music by Ross Bugden\n\nThird Party Resources:\nRAIN AI: \nhttps://www.assetstore.unity3d.com/en/#!/content/23569";
+    public string scrollText = "Developers:\nRyan Andersen\nSiddharth Shah\nMoon Chang\nWei Yang Quek\nDingfeng Shao\n\nLevel Design\nWei Yang Quek\n\nParticle Effects\nDingfeng Shao\nWei Yang Quek\n\nMenu\nRyan Andersen\n\nPlayer Controller\nWei Yang Quek\nMoon Chang\nSiddharth Shah\n\nCamera Controller\nMoon Chang\n\nNPCs\nSiddharth Shah\nDingfeng Shao\n\nIn game UI\nRyan Andersen\nSiddharth Shah\n\nMusic:\nSad Piano Music \nby Ross Bugden\n\nThird Party Resources:\nRAIN AI: \n//www.assetstore.unity3d\n.com/en/#!/content/23569";
 
 	// Use this for initialization
 	void Start () {
