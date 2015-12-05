@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../AlphaDemo/AlphaDemo/Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Mechanics/MovementMechanics/WalkMechanics.cs">
     <Files>
-      <File FileName="../../AlphaDemo/AlphaDemo/Assets/Scripts/PlayerController.cs" Line="31" Column="33" />
+      <File FileName="Assets/Scripts/Mechanics/MovementMechanics/WalkMechanics.cs" Line="50" Column="19" />
+      <File FileName="Assets/Scripts/Mechanics/MovementMechanics/PlayerWalkMechanics.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

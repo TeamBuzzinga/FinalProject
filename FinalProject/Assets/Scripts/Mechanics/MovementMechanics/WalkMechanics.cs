@@ -8,6 +8,7 @@ public class WalkMechanics : MonoBehaviour {
 	public float acceleration;
 	public float rotationAcceleration;
 	public Rigidbody rigid;
+	public float doorForce;
 	
 	public bool movementOn = true;//enable or disable movement in script
 	public bool rotateOn = true;
@@ -35,7 +36,7 @@ public class WalkMechanics : MonoBehaviour {
 			lastHInput = 0;
 			lastVInput = 0;
 		}
-		checkForDoor ();
+
 	}
 	
 	void FixedUpdate()
@@ -46,6 +47,7 @@ public class WalkMechanics : MonoBehaviour {
 		}
 		updateMovementSpeed();
 		updateRotation();
+		//checkForDoor ();
 	}
 	
 	protected virtual void updateMovementSpeed()
@@ -90,19 +92,28 @@ public class WalkMechanics : MonoBehaviour {
 		rotateOn = updateEnabled;
 	}
 	
-	public void checkForDoor()
-	{
-		//Debug.Log ("Checking for Door");
-		Ray ray1 = new Ray(transform.position + Vector3.up, transform.forward);
-		Debug.DrawRay(transform.position + Vector3.up, transform.forward);
-		RaycastHit objectHit = new RaycastHit();
-		
-		if (Physics.Raycast(ray1, out objectHit)) {
-			if(objectHit.distance <= .2f && objectHit.transform.tag=="Door"){
-				Debug.Log ("Door Found");
-				//					push = objectHit.transform.gameObject.GetComponent<AddForcetoObject> ();
-				//					push.addForce();
-			}
+//	public void checkForDoor()
+//	{
+//		//Debug.Log ("Checking for Door");
+//		Ray ray1 = new Ray(transform.position + Vector3.up, transform.forward);
+//		Debug.DrawRay(transform.position + Vector3.up, transform.forward);
+//		RaycastHit objectHit = new RaycastHit();
+//		
+//		if (Physics.Raycast(ray1, out objectHit)) {
+//			if(objectHit.distance <= .2f && objectHit.transform.tag=="Door"){
+//				Debug.Log ("Door Found");
+//				objectHit.transform.gameObject.GetComponent<Animator>().SetTrigger("Open");
+//			}
+//		}
+//	}
+	public void OnTriggerEnter(Collider other){
+		if (other.gameObject.tag == "Door") {
+			other.gameObject.GetComponent<Animator>().SetBool("Open", true);
+		}
+	}
+	public void OnTriggerExit(Collider other){
+		if (other.gameObject.tag == "Door") {
+			other.gameObject.GetComponent<Animator>().SetBool("Open", false);
 		}
 	}
 }
