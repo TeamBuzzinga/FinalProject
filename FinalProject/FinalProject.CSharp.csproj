@@ -83,10 +83,13 @@
     <Compile Include="Assets\AI\Actions\prediction.cs" />
     <Compile Include="Assets\AI\Actions\take_damage.cs" />
     <Compile Include="Assets\Scripts\AnimationScripts\PlayerAnimation.cs" />
+    <Compile Include="Assets\Scripts\AudioScripts\Audio_PlayerMove.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraCollision.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMechanics.cs" />
+    <Compile Include="Assets\Scripts\CollectionScript.cs" />
     <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
+    <Compile Include="Assets\Scripts\DoorMechanics.cs" />
     <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
     <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />
@@ -104,6 +107,7 @@
     <Compile Include="Assets\Scripts\Npc_script\NpcTakeDamage.cs" />
     <Compile Include="Assets\Scripts\Npc_script\guard.cs" />
     <Compile Include="Assets\Scripts\Npc_script\rotate.cs" />
+    <Compile Include="Assets\Scripts\WinCondition.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\Raw Mocap Data\Animations\_CompleteAnimationList.txt" />

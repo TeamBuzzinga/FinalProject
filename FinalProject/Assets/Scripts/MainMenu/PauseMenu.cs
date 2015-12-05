@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause") && !objectiveScript.getObjectiveUp())
         {
             setPauseScreenActive();
         }
@@ -67,7 +67,7 @@ public class PauseMenu : MonoBehaviour {
         {
             return;
         }
-        Application.LoadLevel("MainMenu");
+        Application.LoadLevel("RyanMainMenu");
     }
 
     public void OnObjectivesClicked()
