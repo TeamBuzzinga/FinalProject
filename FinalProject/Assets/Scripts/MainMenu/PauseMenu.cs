@@ -44,7 +44,15 @@ public class PauseMenu : MonoBehaviour {
         gameCamera.GetComponent<CameraMechanics>().setUpdateEnabled(!pauseMenu.activeSelf);
         foreach (GameObject e in enemies)
         {
-
+            e.GetComponent<Animator>().enabled = !pauseMenu.activeSelf;
+            if (pauseMenu.activeSelf)
+            {
+                e.GetComponentInChildren<RAIN.Core.AIRig>().AI.Motor.Stop();
+            }
+            else
+            {
+                e.GetComponentInChildren<RAIN.Core.AIRig>().AI.Motor.Start();
+            }
         }
 
     }
