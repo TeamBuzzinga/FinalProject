@@ -77,6 +77,7 @@
      <Compile Include="Assets\Scripts\Npc_script\NpcTakeDamage.cs" />
      <Compile Include="Assets\Scripts\Npc_script\guard.cs" />
      <Compile Include="Assets\Scripts\Npc_script\rotate.cs" />
+     <Compile Include="Assets\Scripts\WinCondition.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\Objects\CeilingLamp\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
@@ -113,17 +114,11 @@
      <None Include="Assets\Objects\Plant 2\archibase.net.txt" />
      <None Include="Assets\Objects\Switch\archibase.net.txt" />
      <None Include="Assets\Objects\Sink\archibase.net.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Program/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Program/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Program/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
  <HintPath>D:/Projects/Unity/Github/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
