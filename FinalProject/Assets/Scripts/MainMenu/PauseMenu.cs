@@ -5,6 +5,7 @@ using System.Collections;
 public class PauseMenu : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject gameCamera;
+    public GameObject[] enemies;
     public Button currentButton;
     public ObjectivesScript objectiveScript;
 
@@ -17,6 +18,7 @@ public class PauseMenu : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         gameCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        enemies = GameObject.FindGameObjectsWithTag("npc");
     }
 
     void Update()
@@ -40,6 +42,10 @@ public class PauseMenu : MonoBehaviour {
         player.GetComponent<ThrowMechanics>().enabled = !pauseMenu.activeSelf;
         player.GetComponent<Rigidbody>().isKinematic = pauseMenu.activeSelf;
         gameCamera.GetComponent<CameraMechanics>().setUpdateEnabled(!pauseMenu.activeSelf);
+        foreach (GameObject e in enemies)
+        {
+
+        }
 
     }
 
