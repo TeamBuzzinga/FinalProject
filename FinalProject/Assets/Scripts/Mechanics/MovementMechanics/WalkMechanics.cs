@@ -106,14 +106,5 @@ public class WalkMechanics : MonoBehaviour {
 //			}
 //		}
 //	}
-	public void OnTriggerEnter(Collider other){
-		if (other.gameObject.tag == "Door") {
-			other.gameObject.GetComponent<Animator>().SetBool("Open", true);
-		}
-	}
-	public void OnTriggerExit(Collider other){
-		if (other.gameObject.tag == "Door") {
-			other.gameObject.GetComponent<Animator>().SetBool("Open", false);
-		}
-	}
+
 }
