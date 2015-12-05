@@ -10,10 +10,13 @@ public class guard : MonoBehaviour {
     private ParticleSystem[] p_systems;
     private Animator player_animator;
     private bool hit=false;
+    private Transform guard_location;
 
     private AudioSource dizzy;
+
     public GameObject exclamation1;
     public GameObject exclamation2;
+ 
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +24,8 @@ public class guard : MonoBehaviour {
         p_systems = GetComponentsInChildren<ParticleSystem>();
         player_animator = GetComponent<Animator>();
         dizzy = GetComponent<AudioSource>();
+        guard_location = GetComponent<Transform>();
+        npc.AI.Mind.AI.WorkingMemory.SetItem<Vector3>("initial_location", guard_location.position);
 	}
 
 	public void takeDamage() {
