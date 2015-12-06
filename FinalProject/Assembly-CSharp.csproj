@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Npc_script\guard.cs" />
      <Compile Include="Assets\Scripts\Npc_script\rotate.cs" />
      <Compile Include="Assets\Scripts\WinCondition.cs" />
+     <Compile Include="Assets\Scripts\normaldooropen.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\Objects\CeilingLamp\archibase.net.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\AspectSphereShader.shader" />
