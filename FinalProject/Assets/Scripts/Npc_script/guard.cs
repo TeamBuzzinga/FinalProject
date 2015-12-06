@@ -16,7 +16,7 @@ public class guard : MonoBehaviour {
 
     public GameObject exclamation1;
     public GameObject exclamation2;
- 
+    private GameObject[] switches;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +26,10 @@ public class guard : MonoBehaviour {
         dizzy = GetComponent<AudioSource>();
         guard_location = GetComponent<Transform>();
         npc.AI.Mind.AI.WorkingMemory.SetItem<Vector3>("initial_location", guard_location.position);
+
+        switches = GameObject.FindGameObjectsWithTag("Switch");
+
+
 	}
 
 	public void takeDamage() {
@@ -46,6 +50,17 @@ public class guard : MonoBehaviour {
 
     void Update()
     {
+        for (int i = 0; i < switches.Length; i++)
+        {
+            if (switches[i].GetComponent<LightControl>().lighton == false)
+            {
+                npc.AI.Mind.AI.WorkingMemory.SetItem<bool>("lighton", false);
+            }
+        }
+
+       
+
+
         if (npc.AI.Mind.AI.WorkingMemory.GetItem<bool>("stun"))
         {
             if (!dizzy.isPlaying)

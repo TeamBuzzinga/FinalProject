@@ -9,6 +9,7 @@ public class DoorOpen : MonoBehaviour {
     private Vector3 door1initial;
     private Vector3 door2initial;
     private AudioSource winAudio;
+    private bool dooropened=false;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class DoorOpen : MonoBehaviour {
                 if (collider.tag == "Player" && playerStats.keysCollected > 0)
                 {
                     openDoors();
+                    dooropened = true;
                 }
             }
             else if (Application.loadedLevelName == "Office Level 2")
@@ -32,6 +34,7 @@ public class DoorOpen : MonoBehaviour {
                 if (collider.tag == "Player" && playerStats.itemsCollected > 2)
                 {
                     openDoors();
+                    dooropened = true;
                 }
             }
             else
@@ -39,7 +42,7 @@ public class DoorOpen : MonoBehaviour {
                 if (collider.tag == "Player")
                 {
                     openDoors();
-
+                    dooropened = true;
                 }
 
             }
@@ -49,9 +52,10 @@ public class DoorOpen : MonoBehaviour {
 
     void OnTriggerExit(Collider collider)
     {
-        if (collider.tag == "Player")
+        if (collider.tag == "Player"&& dooropened)
         {
             closeDoors();
+            dooropened = false;
         }
     }
 
