@@ -8,7 +8,12 @@ public class DoorOpen : MonoBehaviour {
     public Transform door2OpenPosition;
     private Vector3 door1initial;
     private Vector3 door2initial;
+    private AudioSource winAudio;
 
+    void Start()
+    {
+        winAudio = GetComponent<AudioSource>();
+    }
 
 	void OnTriggerEnter(Collider collider)
     {
@@ -34,6 +39,7 @@ public class DoorOpen : MonoBehaviour {
                 if (collider.tag == "Player")
                 {
                     openDoors();
+
                 }
 
             }
@@ -58,6 +64,7 @@ public class DoorOpen : MonoBehaviour {
         door2initial = door2.position;
         door1.position = door1OpenPosition.position;
         door2.position = door2OpenPosition.position;
+        winAudio.Play();
     }
 
     void closeDoors()

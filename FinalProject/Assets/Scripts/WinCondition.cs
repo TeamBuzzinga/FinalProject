@@ -7,9 +7,12 @@ public class WinCondition : MonoBehaviour {
     public string nextLevelName = "RyanMainMenu";
     Animator winAnim;
 
+
+
     void Start()
     {
         winAnim = GameObject.FindGameObjectWithTag("Win").GetComponent<Animator>();
+
     }
 
 
@@ -19,11 +22,23 @@ public class WinCondition : MonoBehaviour {
 
         if (playerStats != null)
         {
-            if (checkObjectiveComplete(playerStats))
-            {
+            //Dingfeng checks the objective completion when the player enters the door. Check dooropen.cs
+            
+            //if (checkObjectiveComplete(playerStats))
+            //{
                 playerStats.reachedGoal++;
+
                 winAnim.SetTrigger("WinGame");
-            }
+            //}
+
+              
+                    if (Application.loadedLevelName == "Office Level 1")
+                        Application.LoadLevel("Office Level 2");
+                    else if (Application.loadedLevelName == "Office Level 2")
+                        Application.LoadLevel("Office Level 3");
+                    else
+                        Application.LoadLevel(nextLevelName);
+              
         }
 
 
