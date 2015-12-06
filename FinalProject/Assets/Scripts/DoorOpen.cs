@@ -45,7 +45,6 @@ public class DoorOpen : MonoBehaviour {
     {
         if (collider.tag == "Player")
         {
-            Debug.Log("leaveleaveleave");
             closeDoors();
         }
     }
