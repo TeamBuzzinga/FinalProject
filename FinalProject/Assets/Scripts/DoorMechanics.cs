@@ -19,9 +19,11 @@ public class DoorMechanics : MonoBehaviour {
 			anim.SetBool("Open", true);
 		}
 	}
+    
 	public void OnTriggerExit(Collider other){
 		if (other.gameObject.tag == "Player") {
 			anim.SetBool("Open", false);
 		}
 	}
+   
 }
