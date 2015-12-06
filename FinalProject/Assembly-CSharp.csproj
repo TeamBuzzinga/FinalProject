@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\CollectionScript.cs" />
      <Compile Include="Assets\Scripts\DestroyOnTrigger.cs" />
      <Compile Include="Assets\Scripts\DoorMechanics.cs" />
+     <Compile Include="Assets\Scripts\DoorOpen.cs" />
      <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
      <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
      <Compile Include="Assets\Scripts\MainMenu\LoseGUIAnimation.cs" />
@@ -116,17 +117,11 @@
      <None Include="Assets\Objects\Plant 2\archibase.net.txt" />
      <None Include="Assets\Objects\Switch\archibase.net.txt" />
      <None Include="Assets\Objects\Sink\archibase.net.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
  <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
