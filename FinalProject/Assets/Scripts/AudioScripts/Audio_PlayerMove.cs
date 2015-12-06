@@ -11,18 +11,16 @@ public class Audio_PlayerMove : MonoBehaviour {
 	void Start () {
 		audioSource = GetComponent<AudioSource> ();
 	}
-	void Update () {
-		audioSource.pitch = Random.Range(1f,1.5f);
-	}
+
 	void PlayWalk(){
 		audioSource.clip = Walk;
-
+		audioSource.pitch = Random.Range(1f,1.5f);
 		audioSource.Play ();
 	}
 
 	void PlayRun(){
 		audioSource.clip = Run;
-
+		audioSource.pitch = Random.Range(1f,1.5f);
 		audioSource.Play ();
 	}
 
