@@ -129,10 +129,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
