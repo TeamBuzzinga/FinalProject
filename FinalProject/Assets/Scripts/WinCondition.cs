@@ -28,7 +28,7 @@ public class WinCondition : MonoBehaviour {
             //{
                 playerStats.reachedGoal++;
 
-                winAnim.SetTrigger("WinGame");
+                //winAnim.SetTrigger("WinGame");
             //}
 
               

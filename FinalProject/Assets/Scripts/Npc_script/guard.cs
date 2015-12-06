@@ -48,15 +48,24 @@ public class guard : MonoBehaviour {
         }
     }
 
-    void Update()
+
+    bool check_lighton()
     {
+
         for (int i = 0; i < switches.Length; i++)
         {
             if (switches[i].GetComponent<LightControl>().lighton == false)
             {
-                npc.AI.Mind.AI.WorkingMemory.SetItem<bool>("lighton", false);
+                return false;
             }
         }
+
+        return true;
+    }
+
+    void Update()
+    {
+        npc.AI.Mind.AI.WorkingMemory.SetItem<bool>("lighton", check_lighton());
 
        
 

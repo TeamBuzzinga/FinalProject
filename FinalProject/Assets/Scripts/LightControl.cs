@@ -5,8 +5,7 @@ public class LightControl : MonoBehaviour {
 
     public bool lighton = true;
     public GameObject light1;
-    public GameObject light2;
-    public GameObject light3;
+
 
 	// Use this for initialization
 	void Start () {
@@ -17,10 +16,18 @@ public class LightControl : MonoBehaviour {
     {
         if (collider.tag == "Player")
         {
-            light1.GetComponent<Light>().enabled = !light1.GetComponent<Light>().enabled;
-            light2.GetComponent<Light>().enabled = !light2.GetComponent<Light>().enabled;
-            light3.GetComponent<Light>().enabled = !light3.GetComponent<Light>().enabled;
-            lighton = light1.GetComponent<Light>().enabled;
+            if (light1.GetComponent<Light>().intensity < 0.5f)
+            {
+                light1.GetComponent<Light>().intensity = 0.7f;
+                lighton = true;
+            }
+            else
+            {
+                light1.GetComponent<Light>().intensity = 0.3f;
+                lighton = false;
+            }
+
+             
         }
 
     }
