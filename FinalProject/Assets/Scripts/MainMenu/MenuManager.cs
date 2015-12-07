@@ -171,7 +171,7 @@ public class MenuManager : MonoBehaviour {
 
     public void playButtonPressed()
     {
-        Application.LoadLevel("Office v1.3");
+        Application.LoadLevel("Office Level 1");
     }
 
     public void creditsButtonPresed()
