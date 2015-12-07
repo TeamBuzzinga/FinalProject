@@ -28,8 +28,8 @@ public class CollectionScript : MonoBehaviour {
 				playerStats.itemsCollected++;
 				objective.setSound(2);
 				break;
-				
 			}
+
 			Destroy(this.gameObject);
 		}
 	}

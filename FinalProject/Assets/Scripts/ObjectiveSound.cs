@@ -27,15 +27,15 @@ public class ObjectiveSound : MonoBehaviour {
 	void PlaySound() {
 		if (sound == 1) {
 			audioSource.clip = Key;
-			audioSource.pitch = 1;
 			audioSource.Play ();
-			//if (!audioSource.isPlaying) {sound = 0;}
 			sound = 0;
 		} else if (sound == 2) {
 			audioSource.clip = Fruit;
-			audioSource.pitch = 1;
 			audioSource.Play ();
-			//if (!audioSource.isPlaying){sound = 0;}
+			sound = 0;
+		} else if (sound == 3) {
+			audioSource.clip = Switch;
+			audioSource.Play ();
 			sound = 0;
 		}
 	}
