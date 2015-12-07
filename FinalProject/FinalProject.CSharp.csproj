@@ -82,6 +82,7 @@
     <Compile Include="Assets\AI\Actions\guard_catch_player.cs" />
     <Compile Include="Assets\AI\Actions\prediction.cs" />
     <Compile Include="Assets\AI\Actions\take_damage.cs" />
+    <Compile Include="Assets\Animations\MainMenu\WinUIScript.cs" />
     <Compile Include="Assets\Scripts\AnimationScripts\PlayerAnimation.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\Audio_PlayerMove.cs" />
     <Compile Include="Assets\Scripts\AudioScripts\SoundManager.cs" />
