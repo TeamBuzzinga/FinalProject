@@ -9,7 +9,7 @@ public class KeySpawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		int positionIndex = Random.Range (0, 5);
-		Debug.Log (positionIndex.ToString());
+		//Debug.Log (positionIndex.ToString());
 		Instantiate (carKey, spawnPoints [positionIndex], Quaternion.identity);
 	}
 }
