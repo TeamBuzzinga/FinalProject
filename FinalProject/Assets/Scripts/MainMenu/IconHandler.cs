@@ -16,11 +16,13 @@ public class IconHandler : MonoBehaviour {
 	void Update () {
 	    if (playerStats.keysCollected > 0)
         {
-            keys.enabled = true;
+            Debug.Log(playerStats.keysCollected.ToString());
+
+            keys.gameObject.SetActive(true);
         }
         if (playerStats.itemsCollected > 0)
         {
-            food.enabled = true;
+            food.gameObject.SetActive(true);
         }
 	}
 }
