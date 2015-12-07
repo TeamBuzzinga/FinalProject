@@ -27,6 +27,7 @@ public class DoorOpen : MonoBehaviour {
                 {
                     openDoors();
                     dooropened = true;
+                    collider.GetComponent<Animator>().SetTrigger("winDance");
                 }
             }
             else if (Application.loadedLevelName == "Office Level 2")
@@ -35,6 +36,7 @@ public class DoorOpen : MonoBehaviour {
                 {
                     openDoors();
                     dooropened = true;
+                    collider.GetComponent<Animator>().SetTrigger("winDance");
                 }
             }
             else
@@ -43,6 +45,7 @@ public class DoorOpen : MonoBehaviour {
                 {
                     openDoors();
                     dooropened = true;
+                    collider.GetComponent<Animator>().SetTrigger("winDance");
                 }
 
             }
