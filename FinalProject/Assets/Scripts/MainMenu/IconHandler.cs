@@ -16,7 +16,7 @@ public class IconHandler : MonoBehaviour {
 	void Update () {
 	    if (playerStats.keysCollected > 0)
         {
-            Debug.Log(playerStats.keysCollected.ToString());
+
 
             keys.gameObject.SetActive(true);
         }

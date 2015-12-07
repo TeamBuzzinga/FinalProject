@@ -32,15 +32,20 @@ public class WinCondition : MonoBehaviour {
             //}
 
               
-                    if (Application.loadedLevelName == "Office Level 1")
-                        Application.LoadLevel("Office Level 2");
-                    else if (Application.loadedLevelName == "Office Level 2")
-                        Application.LoadLevel("Office Level 3");
-                    else
-                        Application.LoadLevel(nextLevelName);
-              
+                   
         }
 
+
+    }
+
+    public void OnLevelClick()
+    {
+        if (Application.loadedLevelName == "Office Level 1")
+            Application.LoadLevel("Office Level 2");
+        else if (Application.loadedLevelName == "Office Level 2")
+            Application.LoadLevel("Office Level 3");
+        else
+            Application.LoadLevel(nextLevelName);
 
     }
 
