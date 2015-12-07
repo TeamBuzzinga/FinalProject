@@ -66,11 +66,13 @@
      <Compile Include="Assets\Scripts\LightControl.cs" />
      <Compile Include="Assets\Scripts\MainMenu\CreateScrollingText.cs" />
      <Compile Include="Assets\Scripts\MainMenu\FadeText.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\IconHandler.cs" />
      <Compile Include="Assets\Scripts\MainMenu\LoseGUIAnimation.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MenuManager.cs" />
      <Compile Include="Assets\Scripts\MainMenu\ObjectivesScript.cs" />
      <Compile Include="Assets\Scripts\MainMenu\OptionHandler.cs" />
      <Compile Include="Assets\Scripts\MainMenu\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\MainMenu\StrikesAnimator.cs" />
      <Compile Include="Assets\Scripts\MainMenu\TriggerValue.cs" />
      <Compile Include="Assets\Scripts\MapPlayerPosition.cs" />
      <Compile Include="Assets\Scripts\Mechanics\MovementMechanics\PlayerWalkMechanics.cs" />
@@ -134,10 +136,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Moon Chang/Desktop/Projects/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Dingfeng/Documents/GitHub/FinalProject/FinalProject/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
